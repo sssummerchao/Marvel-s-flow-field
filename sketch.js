@@ -35,7 +35,7 @@ function setup() {
   textStyle(BOLD);
   text("Marvel's noise flow field", 800, height/2-40);
   pop();
-  text('Click anywhere to switch to the next characters\nOnly click once at a time\nIt may take some time to load, please wait patiently', 800, height/2-10);
+  text("It'll take some time to load the character, please wait patiently\nClick anywhere to switch to the next character\nOnly click once at a time", 800, height/2-10);
 
   imgur = createA('https://imgur.com/gallery/z5xzmcA', 'See all characters here', "_blank");
   imgur.position(800, height/2+60);
