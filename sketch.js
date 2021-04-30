@@ -50,7 +50,7 @@ function inti(){
   textStyle(BOLD);
   text("Marvel's noise flow field", 800, height/2-40);
   pop();
-  text('Click anywhere to switch to the next characters\nOnly click once at a time\nIt may take some time to load, please wait patiently', 800, height/2-10);
+  text("It'll take some time to load the character, please wait and enjoy the transition\nClick anywhere to switch to the next character\nOnly click once at a time", 800, height/2-10);
 
 
   var rowPoints = 520;
