@@ -27,7 +27,7 @@ function setup() {
   // image(pic,width/2,height/2);
   // bg.resize(500, 500);
   angleMode(DEGREES);
-  noiseDetail(200);
+  noiseDetail(10);
   inti();
   textFont('Helvetica');
   push();
@@ -53,11 +53,11 @@ function inti(){
   text("It'll take some time to load the character, please wait and enjoy the transition\nClick anywhere to switch to the next character\nOnly click once at a time", 800, height/2-20, 410);
 
 
-  var rowPoints = 520;
+  var rowPoints = 320;
   var distPoints = width/rowPoints;
   for(var x=0; x<width;x+=distPoints){
     for(var y=0; y<height;y+=distPoints){
-        var p = createVector(x+random(10,30),y+random(10,50));
+        var p = createVector(x+random(10,30),y+random(5,30));
         points.push(p);
         }
     
@@ -83,7 +83,7 @@ function draw() {
   // background(255,10);
    for(var i=0; i<points.length;i++){
      
-     var angle = map(noise(points[i].x*mult,points[i].y*mult), 0,1,0,920);
+     var angle = map(noise(points[i].x*mult,points[i].y*mult), 0,1,0,720);
      points[i].add(createVector(cos(angle),sin(angle)));
 
      circle(points[i].x,points[i].y,2);
